@@ -1,0 +1,59 @@
+<%- include('partials/_headers') -%>
+
+<body>
+  <%- include('partials/_nav') -%>
+<style>
+  .btn{
+    height: 50px;
+    width: 200px;
+  }
+</style>
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('img/post-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Man must explore, and this is exploration at its greatest</h1>
+            <h2 class="subheading">Problems look mighty small from 150 miles up</h2>
+            <span class="meta">Posted by
+              <a href="#">Start Bootstrap</a>
+              on August 24, 2019</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <h2 class="section-heading"><%= post.title %></h2>
+
+          <p><%= post.detail %></p>
+          <blockquote><%= post.dateCreated %></blockquote>
+        </div>
+        <div class="tm-bg-gray tm-share-box">
+          <div>
+            <a href="/edit/<%= post.id%>" class="position-absolute tm-img-overlay">
+              <button class="btn btn-warning p-0 tm-btn-animate tm-btn-download"><span>Update Video</span></button>
+            </a>
+          </div>
+          <br /><br /><br />
+          <div>
+            <button onclick='confirm("resim silinsin mi?") == true ? window.location.href = "/delete/<%= post.id %>" : window.location.href = "/post/<%= post.id %>"' class="btn btn-danger p-0 tm-btn-animate tm-btn-download"><span>Delete Video</span></button>	
+          </div>								
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <%- include('partials/_footer') -%>
+</body>
+
+</html>

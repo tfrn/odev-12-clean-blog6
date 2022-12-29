@@ -1,0 +1,28 @@
+{
+  "name": "odev-8-clean-blog3",
+  "version": "1.0.0",
+  "description": "patika.dev node.js dersi clean blog ödevi 3. kısım",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tfrn/odev-8-clean-blog3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tfrn/odev-8-clean-blog3/issues"
+  },
+  "homepage": "https://github.com/tfrn/odev-8-clean-blog3#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "mongoose": "^6.8.1",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.8.1"
+  }
+}
